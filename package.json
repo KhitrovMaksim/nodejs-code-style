@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-show-percentage-of-completion",
+  "version": "1.0.0",
+  "description": "Show percentage of completion",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maksim Khitrov",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.11.2"
+  }
+}
