@@ -5,10 +5,12 @@ const processFileLineByLineWithCliProgressBar = require("./lib/processFileLineBy
 
 // Own implementation.
 processFileLineByLineWithProgressBar("free_company_dataset.csv").catch(
+  // eslint-disable-next-line no-console
   console.error
 );
 
 // Implementation with CLI-Progress package.
 processFileLineByLineWithCliProgressBar("free_company_dataset.csv").catch(
+  // eslint-disable-next-line no-console
   console.error
 );
