@@ -5,8 +5,11 @@
   "main": "main.js",
   "scripts": {
     "format": "npm run prettier-fix && npm run eslint-fix",
+    "lint": "npm run prettier-check && npm run eslint-check",
     "eslint-fix": "eslint . --fix",
-    "prettier-fix": "prettier --write \"**/*.js\" \"**/*.json\""
+    "prettier-fix": "prettier --write \"**/*.js\" \"**/*.json\"",
+    "eslint-check": "eslint .",
+    "prettier-check": "prettier -c \"**/*.js\" \"**/*.json\""
   },
   "author": "Maksim Khitrov",
   "license": "ISC",
