@@ -1,15 +1,14 @@
-'use strict'
+"use strict";
 
-const processFileLineByLineWithProgressBar = require('./lib/processFileLineByLineWithProgressBar')
-const processFileLineByLineWithCliProgressBar = require('./lib/processFileLineByLineWithCliProgressBar')
+const processFileLineByLineWithProgressBar = require("./lib/processFileLineByLineWithProgressBar");
+const processFileLineByLineWithCliProgressBar = require("./lib/processFileLineByLineWithCliProgressBar");
 
 // Own implementation.
-// processFileLineByLineWithProgressBar('1000kb.txt').catch(console.error)
+processFileLineByLineWithProgressBar("free_company_dataset.csv").catch(
+  console.error
+);
 
 // Implementation with CLI-Progress package.
-processFileLineByLineWithCliProgressBar('free_company_dataset.csv').catch(console.error)
-
-
-
-
-
+processFileLineByLineWithCliProgressBar("free_company_dataset.csv").catch(
+  console.error
+);
