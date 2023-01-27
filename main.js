@@ -11,5 +11,7 @@ processFileLineByLineWithProgressBar("free_company_dataset.csv").catch(
 
 // Implementation with CLI-Progress package.
 processFileLineByLineWithCliProgressBar("free_company_dataset.csv").catch(
+
+
   console.error
 );
