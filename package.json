@@ -9,18 +9,11 @@
     "eslint-fix": "eslint . --fix",
     "prettier-fix": "prettier --write \"**/*.js\" \"**/*.json\"",
     "eslint-check": "eslint .",
-    "prettier-check": "prettier -c \"**/*.js\" \"**/*.json\""
+    "prettier-check": "prettier -c \"**/*.js\" \"**/*.json\"",
+    "prepare": "husky install"
   },
   "author": "Maksim Khitrov",
   "license": "ISC",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "npm run format"
-  },
   "dependencies": {
     "cli-progress": "^3.11.2"
   },
