@@ -13,6 +13,14 @@
   },
   "author": "Maksim Khitrov",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": "npm run format"
+  },
   "dependencies": {
     "cli-progress": "^3.11.2"
   },
@@ -22,6 +30,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.7.1"
   }
 }
