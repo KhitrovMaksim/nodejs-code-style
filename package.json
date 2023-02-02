@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-show-percentage-of-completion",
+  "version": "1.0.0",
+  "description": "Show percentage of completion",
+  "main": "main.js",
+  "scripts": {
+    "format": "npm run prettier-fix && npm run eslint-fix",
+    "lint": "npm run prettier-check && npm run eslint-check",
+    "eslint-fix": "eslint . --fix",
+    "prettier-fix": "prettier --write \"**/*.js\" \"**/*.json\"",
+    "eslint-check": "eslint .",
+    "prettier-check": "prettier -c \"**/*.js\" \"**/*.json\"",
+    "prepare": "husky install"
+  },
+  "author": "Maksim Khitrov",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-metarhia": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.7.1"
+  }
+}

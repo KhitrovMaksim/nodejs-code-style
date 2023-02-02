@@ -1,7 +1,11 @@
 # nodejs-code-style.
+
 ## 2. Tooling.
+
 ### 2.1 Code Style
+
 #### Task.
+
 1. Configure .prettierrc. Default settings is okey.
 2. Configure .eslintrc.js with some node.js related config. It should have enabled no-console rule
 3. Fix eslint errors. Start with autofix, then use manual fix. Use // eslint-disable-next-line for no-console error.
